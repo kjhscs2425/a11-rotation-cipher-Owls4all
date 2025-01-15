@@ -11,6 +11,7 @@ def encrypt(str):
         if ciphers[cipher].count(letter) !=1:
             new_letter = ''
         else:
+            key+=1
             new_letter = ciphers[cipher][(ciphers[cipher].find(letter)+key)%len(ciphers[cipher])]
         str_encrypted += new_letter
     return str_encrypted
@@ -20,8 +21,9 @@ def decrypt(str):
     str = str.lower()
     for letter in (str):
         if ciphers[cipher].count(letter) !=1:
-            new_letter = ' '
+            new_letter = ''
         else:
+            key+=1
             new_letter = ciphers[cipher][(ciphers[cipher].find(letter)-key)%len(ciphers[cipher])]
         str_decrypted += new_letter
     return str_decrypted
