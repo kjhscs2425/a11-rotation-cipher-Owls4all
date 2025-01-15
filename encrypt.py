@@ -22,7 +22,7 @@ def decrypt(str):
         if ciphers[cipher].count(letter) !=1:
             new_letter = ' '
         else:
-            new_letter = ciphers[cipher][ciphers[cipher].find(letter)-key]
+            new_letter = ciphers[cipher][(ciphers[cipher].find(letter)-key)%len(ciphers[cipher])]
         str_decrypted += new_letter
     return str_decrypted
 
