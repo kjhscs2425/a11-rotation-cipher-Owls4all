@@ -1,5 +1,5 @@
 order0 = '''abcdefghijklmnopqrstuvwxyz'''
-order1 = '''d8x3a'p?yw;k6q-ue:g2.v#9$5t,lz7i"!1 o04rbfshmjc'''
+order1 = '''d8x3a'p?yw;k6q-ue:g2.v#n9$5t,lz7i"!1 o04rbfshmjc'''
 ciphers=[order0,order1]
 cipher=1
 key = 2
